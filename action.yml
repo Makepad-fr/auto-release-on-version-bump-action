@@ -1,0 +1,9 @@
+name: 'Check version increase and create release'
+description: 'Checks if the version in package.json has increased, and if so, creates a new release'
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
