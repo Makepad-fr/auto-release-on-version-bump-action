@@ -1,4 +1,7 @@
 name: 'Check version increase and create release'
+branding:
+  icon: package
+  color: green
 description: 'Checks if the version in package.json has increased, and if so, creates a new release'
 inputs:
   token:
