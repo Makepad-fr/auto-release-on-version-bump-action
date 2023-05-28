@@ -1,6 +1,6 @@
 {
   "name": "auto-release-on-version-bump",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A GitHub action that verifies if the version in package.json file is incremented. If yes, it creates a new release for the new version, if not it fails",
   "main": "dist/index.js",
   "scripts": {
@@ -11,11 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "import * as core from '@actions/core';"
+    "url": "git@github.com:Makepad-fr/auto-release-on-version-bump.git"
   },
-  "keywords": [
-    "se...');"
-  ],
+  "keywords": [],
   "author": "Makepad Developers <dev@makepad.fr>",
   "license": "Apache-2.0",
   "devDependencies": {
