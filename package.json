@@ -1,6 +1,6 @@
 {
   "name": "auto-release-on-version-bump",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A GitHub action that verifies if the version in package.json file is incremented. If yes, it creates a new release for the new version, if not it fails",
   "main": "dist/index.js",
   "scripts": {
