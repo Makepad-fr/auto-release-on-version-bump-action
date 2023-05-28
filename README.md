@@ -27,7 +27,7 @@ This action checks if the version in `package.json` is incremented, and creates 
 ## Example usage
 
 ```yaml
-uses: Makepad-fr/auto-release-on-version-bump@v1
+uses: Makepad-fr/auto-release-on-version-bump-actionp@v1.0.3
 with:
   token: ${{ secrets.GITHUB_TOKEN }}
   name: 'Release $newVersion'
