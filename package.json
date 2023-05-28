@@ -7,7 +7,7 @@
     "lint": "node_modules/.bin/eslint src/**/*.ts",
     "lint:fix": "npm run lint --fix",
     "build:compile": "node_modules/.bin/tsc -p tsconfig.json",
-    "build:pack": "node_modules/.bin/ncc build out/index.js --license LICENSE",
+    "build:pack": "node_modules/.bin/ncc build --source-map --license LICENSE",
     "build": "npm run build:compile && npm run build:pack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
