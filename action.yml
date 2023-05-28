@@ -21,14 +21,13 @@ inputs:
     required: false
     default: "auto"
   generate-release-note:
-    description: "A boolean indicating if a release not should be generated or not",
+    description: "A boolean indicating if a release note should be generated or not"
     required: false
-    default:  "true" # Generate the release not by default
+    default: "true" # Generate the release note by default
   tag-name:
     description: The name of the tag to create
     required: false
-    default: "$neVersion"
-
+    default: "$newVersion"
 
 runs:
   using: 'node12'
