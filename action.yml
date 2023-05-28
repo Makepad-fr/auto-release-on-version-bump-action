@@ -4,6 +4,32 @@ inputs:
   token:
     description: 'GitHub token'
     required: true
+  name:
+    description: "The name of the release"
+    required: false # If the body is missing the default value will be the new version
+    default: "v$newVersion"
+  body:
+    description: "The body of the release"
+    required: false
+    default: ""
+  draft:
+    description: "A boolean indicating that if the created release should be a draft"
+    required: false
+    default: "false"
+  pre-release:
+    description: "An enumeration indicating that if pre-release. Available values: true, false, auto"
+    required: false
+    default: "auto"
+  generate-release-note:
+    description: "A boolean indicating if a release not should be generated or not",
+    required: false
+    default:  "true" # Generate the release not by default
+  tag-name:
+    description: The name of the tag to create
+    required: false
+    default: "$neVersion"
+
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
