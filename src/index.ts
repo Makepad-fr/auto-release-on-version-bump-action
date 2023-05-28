@@ -80,7 +80,7 @@ async function run(): Promise<void> {
             repo,
             tag_name: prepareReleaseName(oldVersion, newVersion, core.getInput('tag-name')),
             name:  prepareReleaseName(oldVersion, newVersion, core.getInput('name')),
-            body: core.getInput('body'),
+            body: prepareReleaseName(oldVersion, newVersion, core.getInput('body')),
             draft: core.getBooleanInput('draft'),
             prerelease,
             generate_release_notes: ((!prerelease) && (core.getBooleanInput('generate-release-note'))),
