@@ -69,7 +69,9 @@ async function run(): Promise<void> {
         const oldVersion: string = getVersion();
         console.log(`Old version: ${oldVersion}`);
 
-        if (newVersion === oldVersion) {
+        
+        if (newVersion === oldVersion && core.getBooleanInput('fail-on-unchanged-version')) {
+            // TODO: The error should be thrown if fail on unchanged version parameter is set to the true
             throw new Error('Version number in package.json did not increase');
         }
 
