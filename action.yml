@@ -31,6 +31,10 @@ inputs:
     description: The name of the tag to create
     required: false
     default: "$newVersion"
+  fail-on-unchanged-version:
+    description: A boolean indicating that if the action should fail when the version is not changed
+    required: false
+    default: "false" # The default value is set to true as it should be changed by the user
 
 runs:
   using: 'node16'

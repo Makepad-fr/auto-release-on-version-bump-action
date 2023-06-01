@@ -23,6 +23,9 @@ This action checks if the version in `package.json` is incremented, and creates 
 - `tag-name`: The name of the tag to create. 
   - Defaults to "$newVersion". 
   - You can use `$newVersion` and `$oldVersion` in this field.
+- `fail-on-unchanged-version`: A boolean indicating if the action should fail when version in package.json file is not changed. It's usually useful for projects that using the action to run on each commit.
+  - Default to `false`
+  - When set to `true` the action will fail if the version in package.json is not chagned
 
 ## Example usage
 
